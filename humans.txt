@@ -1,0 +1,37 @@
+/* humanstxt.org */
+
+/* TEAM */
+
+Antti-Jussi Kovalainen
+Layout, markup, CSS and Javascript
+http://www.ajk.im/
+
+
+
+
+/* THANKS */
+
+Me (http://ajk.im/) for being awesome.
+
+
+
+
+/* SITE */
+
+TECHNOLOGY STACK
+
+960 Grid System   http://960.gs/
+LESS              http://lesscss.org/
+Modernizr         http://modernizr.com/
+jQuery            http://jquery.com/
+
+
+FONTS
+
+Open Sans         http://www.google.com/webfonts/specimen/Open+Sans
+
+
+ICONS
+
+
+ETC.

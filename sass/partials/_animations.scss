@@ -1,0 +1,40 @@
+/* 98.ANIMATIONS
+----------------------------------------------------------------------------- */
+@import "_keyframes";
+
+/* gradually sliding in list items */
+.slideIn > li, .slideIn > article {
+    position:relative;
+    -webkit-animation:slideIn 2.25s;
+    -moz-animation:slideIn 2.25s;
+    -ms-animation:slideIn 2.25s;
+    -o-animation:slideIn 2.25s;
+    animation:slideIn 2.25s;
+}
+.slideIn li:nth-of-type(1),.slideIn > article:nth-of-type(1){-webkit-animation-duration:.225s;-moz-animation-duration:.225s;-ms-animation-duration:.225s;-o-animation-duration:.225s;animation-duration:.225s}
+.slideIn li:nth-of-type(2),.slideIn > article:nth-of-type(2){-webkit-animation-duration:.45s;-moz-animation-duration:.45s;-ms-animation-duration:.45s;-o-animation-duration:.45s;animation-duration:.45s}
+.slideIn li:nth-of-type(3),.slideIn > article:nth-of-type(3){-webkit-animation-duration:.675s;-moz-animation-duration:.675s;-ms-animation-duration:.675s;-o-animation-duration:.675s;animation-duration:.675s}
+.slideIn li:nth-of-type(4),.slideIn > article:nth-of-type(4){-webkit-animation-duration:.9s;-moz-animation-duration:.9s;-ms-animation-duration:.9s;-o-animation-duration:.9s;animation-duration:.9s}
+.slideIn li:nth-of-type(5),.slideIn > article:nth-of-type(5){-webkit-animation-duration:1.125s;-moz-animation-duration:1.125s;-ms-animation-duration:1.125s;-o-animation-duration:1.125s;animation-duration:1.125s}
+.slideIn li:nth-of-type(6),.slideIn > article:nth-of-type(6){-webkit-animation-duration:1.35s;-moz-animation-duration:1.35s;-ms-animation-duration:1.35s;-o-animation-duration:1.35s;animation-duration:1.35s}
+.slideIn li:nth-of-type(7),.slideIn > article:nth-of-type(7){-webkit-animation-duration:1.575s;-moz-animation-duration:1.575s;-ms-animation-duration:1.575s;-o-animation-duration:1.575s;animation-duration:1.575s}
+.slideIn li:nth-of-type(8),.slideIn > article:nth-of-type(8){-webkit-animation-duration:1.8s;-moz-animation-duration:1.8s;-ms-animation-duration:1.8s;-o-animation-duration:1.8s;animation-duration:1.8s}
+.slideIn li:nth-of-type(9),.slideIn > article:nth-of-type(9){-webkit-animation-duration:2.025s;-moz-animation-duration:2.025s;-ms-animation-duration:2.025s;-o-animation-duration:2.025s;animation-duration:2.025s}
+.slideIn li:nth-of-type(10),.slideIn > article:nth-of-type(10){-webkit-animation-duration:2.25s;-moz-animation-duration:2.25s;-ms-animation-duration:2.25s;-o-animation-duration:2.25s;animation-duration:2.25s}
+
+.slideIn li, .slideIn > article {
+    opacity:1;
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    animation-fill-mode:both;
+}
+
+.slideIn > article {
+    -webkit-animation-delay: .35s;
+    -moz-animation-delay: .35s;
+    -ms-animation-delay: .35s;
+    -o-animation-delay: .35s;
+    animation-delay: .35s;
+}

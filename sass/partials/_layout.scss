@@ -1,0 +1,15 @@
+
+.wrapper, .row {
+    overflow: hidden;
+    margin:0 auto;
+    max-width:640px;
+}
+
+/* Sam's Grid System: http://samsoff.es/posts/my-grid-system */
+.row > div {
+    float:right;
+    width:300px;
+}
+.row > div:first-child {
+    float:left;
+}

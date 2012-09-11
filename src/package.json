@@ -1,0 +1,11 @@
+{
+    "author": "ajk",
+    "name": "ajkim-v6",
+    "description": "ajk.im v6 Wordpress theme",
+    "version": "6.0.0",
+    "homepage": "http://ajk.im/",
+    "dependencies": {
+        "grunt-css": "~0.2.1",
+        "grunt-compass": "~0.2.15"
+    }
+}

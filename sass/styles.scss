@@ -1,0 +1,99 @@
+/*!
+ * ajk's Hot New Template
+ * Made by ajk (ajk.fi)
+ */
+
+@import "compass/css3";
+
+
+// Style wide settings
+$color-black: #333;
+$color-white: #f1f1f1;
+
+$font-body: 'Open Sans', sans-serif;
+$font-heading: 'Open Sans Condensed', sans-serif;
+
+
+// Mixins
+@mixin image-replacement {
+    text-indent:100%;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+@mixin clearfix {
+    *zoom: 1;
+
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin disable-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* RESET
+----------------------------------------------------------------------------- */
+@import "partials/_reset";
+
+
+/* BASE & TYPOGRAPHY
+----------------------------------------------------------------------------- */
+@import "partials/_base";
+
+
+/* ICONS & ANIMATIONS
+----------------------------------------------------------------------------- */
+@import "partials/_icons";
+@import "partials/_animations";
+
+
+/* BUTTONS
+----------------------------------------------------------------------------- */
+@import "partials/_buttons";
+
+
+/* FORMS
+----------------------------------------------------------------------------- */
+@import "partials/_forms";
+
+
+/* LAYOUT
+----------------------------------------------------------------------------- */
+@import "partials/_layout";
+
+
+/* HEADER
+----------------------------------------------------------------------------- */
+@import "partials/_header";
+
+
+/* NAV
+----------------------------------------------------------------------------- */
+@import "partials/_nav";
+
+
+/* FOOTER
+----------------------------------------------------------------------------- */
+@import "partials/_footer";
+
+
+/* BE RESPONSIVE
+----------------------------------------------------------------------------- */
+@import "partials/_responsive";
+
+
+/* ALL THE REST
+----------------------------------------------------------------------------- */
+@import "partials/_other";

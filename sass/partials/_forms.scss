@@ -1,0 +1,32 @@
+// Text fields
+//
+// :hover   - Subtle hover style
+// :focus   - Tell the user "Hello, you've selected me!"
+//
+// Styleguide 2.1
+[type=text] {
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    font-size: 12px;
+    line-height: 14px;
+    margin:0 0 24px;
+    outline: 0;
+    padding: 5px 8px 4px;
+
+    -webkit-transition: border 125ms ease;
+    -moz-transition: border 125ms ease;
+    -ms-transition: border 125ms ease;
+    -o-transition: border 125ms ease;
+    transition: border 125ms ease;
+
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff;
+    border-radius: 3px;
+}
+[type="text"]:hover, [type="password"]:hover {
+    border-color:#b5b5b5;
+}
+[type="text"]:focus, [type="password"]:focus {
+    border-color: #17c;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff;
+}
