@@ -1,17 +1,4 @@
 
-/* The nav abstraction (http://csswizardry.com/2011/09/the-nav-abstraction/) */
-.nav {
-    list-style:none;
-    margin-left:0;
-}
-.nav li {
-    display:inline;
-}
-.nav a {
-    display:inline-block;
-}
-
-
 .main-nav {
     background:#eee;
     padding-left:5px;
