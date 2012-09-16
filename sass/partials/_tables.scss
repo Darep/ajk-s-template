@@ -1,0 +1,31 @@
+// Default table
+//
+// Styleguide 4.1
+table {
+    width:100%;
+}
+    th {
+        background: #eaeaea;
+        font-family: $font-heading;
+        font-size: 0.85em;
+        font-weight: 700;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+    }
+    tr {
+        background: #fafafa;
+    }
+    tr:nth-child(even) {
+        background: #f1f1f1;
+    }
+    th, td {
+        padding:6px 16px;
+    }
+    tbody {
+        color: #555;
+        font-size: 0.875em;
+
+        td {
+            vertical-align:middle;
+        }
+    }

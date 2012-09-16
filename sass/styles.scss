@@ -7,11 +7,12 @@
 
 
 // Style wide settings
-$color-black: #333;
-$color-white: #f1f1f1;
+$color-text: #333;
 
 $font-body: 'Open Sans', sans-serif;
 $font-heading: 'Open Sans Condensed', sans-serif;
+
+$baseline: 24px;
 
 
 // Mixins
@@ -48,9 +49,24 @@ $font-heading: 'Open Sans Condensed', sans-serif;
 @import "partials/_reset";
 
 
+/*------------------------------------*\
+    ELEMENTS
+\*------------------------------------*/
+
+
 /* BASE & TYPOGRAPHY
 ----------------------------------------------------------------------------- */
 @import "partials/_base";
+
+
+/*------------------------------------*\
+    OBJECTS
+\*------------------------------------*/
+
+
+/* LAYOUT / GRID
+----------------------------------------------------------------------------- */
+@import "partials/_layout";
 
 
 /* ICONS & ANIMATIONS
@@ -69,14 +85,9 @@ $font-heading: 'Open Sans Condensed', sans-serif;
 @import "partials/_forms";
 
 
-/* LAYOUT
+/* TABLES
 ----------------------------------------------------------------------------- */
-@import "partials/_layout";
-
-
-/* HEADER
------------------------------------------------------------------------------ */
-@import "partials/_header";
+@import "partials/_tables";
 
 
 /* NAV
@@ -84,9 +95,24 @@ $font-heading: 'Open Sans Condensed', sans-serif;
 @import "partials/_nav";
 
 
+/*------------------------------------*\
+    COMPONENTS
+\*------------------------------------*/
+
+
+/* HEADER
+----------------------------------------------------------------------------- */
+@import "partials/_header";
+
+
 /* FOOTER
 ----------------------------------------------------------------------------- */
 @import "partials/_footer";
+
+
+/*------------------------------------*\
+    OTHER
+\*------------------------------------*/
 
 
 /* BE RESPONSIVE

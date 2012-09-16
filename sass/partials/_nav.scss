@@ -1,6 +1,8 @@
+
+/* The nav abstraction (http://csswizardry.com/2011/09/the-nav-abstraction/) */
 .nav {
     list-style:none;
-    padding-left:0;
+    margin-left:0;
 }
 .nav li {
     display:inline;
@@ -9,26 +11,25 @@
     display:inline-block;
 }
 
-nav {
+
+.main-nav {
     background:#eee;
     padding-left:5px;
     width:100%;
 }
-nav a {
+.main-nav a {
+    border:0;
     padding:5px 10px;
 }
-nav .act a {
+.main-nav .act a {
     color:#222;
     font-weight:700;
 }
 
+
 .breadcrumb li:before {
-    content:" » "
+    content:"» "
 }
 .breadcrumb li:first-child:before {
     content:normal;
-}
-.breadcrumb a {
-    font-size:0.75em;
-    line-height:1.5em;
 }

@@ -1,17 +1,22 @@
+legend {
+    font-family: $font-heading;
+    margin:0 0 $baseline;
+}
+
+
 // Text fields
 //
 // :hover   - Subtle hover style
 // :focus   - Tell the user "Hello, you've selected me!"
 //
 // Styleguide 2.1
-[type=text] {
+[type="text"], [type="password"], textarea {
     background: #fff;
     border: 1px solid #c9c9c9;
-    font-size: 12px;
-    line-height: 14px;
-    margin:0 0 24px;
+    font-size: 0.875em;
+    margin:0 0 $baseline;
     outline: 0;
-    padding: 5px 8px 4px;
+    padding: 0.3125em 0.5em;
 
     -webkit-transition: border 125ms ease;
     -moz-transition: border 125ms ease;
@@ -23,10 +28,33 @@
     box-shadow: inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff;
     border-radius: 3px;
 }
-[type="text"]:hover, [type="password"]:hover {
+[type="text"]:hover, [type="password"]:hover, textarea:hover {
     border-color:#b5b5b5;
 }
-[type="text"]:focus, [type="password"]:focus {
+[type="text"]:focus, [type="password"]:focus, textarea:focus {
     border-color: #17c;
     -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff;
+}
+
+label {
+    font-weight:600;
+}
+
+
+// Drop-down
+//
+// Styleguide 2.2
+select {
+    margin:0 0 $baseline;
+}
+
+
+// Checkboxes
+//
+// Styleguide 2.3
+[type="checkbox"] {
+    margin:0 0 $baseline;
+}
+label + label {
+    margin-left:15px;
 }

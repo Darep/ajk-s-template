@@ -9,70 +9,19 @@
 .amp { font-family: 'Goudy Old Style', Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', serif; font-style:italic; }
 
 /* micro clearfix */
-.cf:before, .cf:after,
-#main:before, #main:after,
-.home header:before, .home header:after,
-.post:before, .post:after {
+.cf:before, .cf:after {
     content:"";
     display:table;
 }
-.cf:after, #main:after, .home header:after, .post:after {
+.cf:after {
     clear:both;
 }
-.cf, #main, .home header, .post {
+.cf {
     *zoom:1;
 }
 
 /* god damn facebook! */
 #fb-root { display:none }
 
-
-/* 99.PLUGINS
------------------------------------------------------------------------------ */
-/* tipsy */
-.tipsy { font-size: 10px; opacity:0.0; position: absolute; padding: 5px; z-index: 100000; -webkit-transition:opacity 0.2s linear; }
-  .tipsy-inner { background-color: #fff; color: #727b8b; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
-
-  /* Rounded corners */
-  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
-
-  /* Uncomment for shadow */
-  /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
-
-  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #fff; }
-
-  /* Rules to colour arrows */
-  .tipsy-arrow-n { border-bottom-color: #fff; }
-  .tipsy-arrow-s { border-top-color: #fff; }
-  .tipsy-arrow-e { border-left-color: #fff; }
-  .tipsy-arrow-w { border-right-color: #fff; }
-
-    .tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
-    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
-  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
-    .tipsy-se .tipsy-arrow { bottom: 0; right: 10px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
-  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
-  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
-
-
-/* AddThis */
-
-.addthis_toolbox {
-    a {
-        border:0;
-        margin-right: 12px;
-    }
-}
-
-.addthis_button_facebook_like {
-    position:relative;
-    top:-2px;
-}
-
-#at_hover a {
-    border:0;
-}
 
 @import "_pygments";

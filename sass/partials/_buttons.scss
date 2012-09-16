@@ -6,10 +6,7 @@
 // Styleguide 3.1
 [type=submit], .btn {
     background: #fafafa;
-    background: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-    background: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-    background: -o-linear-gradient(top, #ffffff, #e6e6e6);
-    background: linear-gradient(top, #ffffff, #e6e6e6);
+    @include background-image(linear-gradient(top, #ffffff, #e6e6e6));
     border:1px solid #bdbdbd;
     border-color:#cecece #bdbdbd #aeaeae;
     color:#707070;
@@ -17,21 +14,17 @@
 
     display:inline-block;
     font-family:inherit;
-    font-size:12px;
-    line-height:23px;
+    font-size:0.875em;
+    line-height:$baseline - 1;
     font-weight:700;
-    margin:0 0 24px;
-    padding:0 1.1em;
+    margin:0 0 $baseline;
+    padding:.25em 1.125em;
     text-decoration:none;
     text-shadow:0px 1px 0px #fff;
 
     border-radius: 3px;
 
-    -webkit-transition: border 125ms ease;
-    -moz-transition: border 125ms ease;
-    -o-transition: border 125ms ease;
-    -ms-transition: border 125ms ease;
-    transition: border 125ms ease;
+    @include transition(border 125ms ease, box-shadow 125ms ease);
 
     &:hover, &:active, &.act {
         border-color:#a0a0a0;

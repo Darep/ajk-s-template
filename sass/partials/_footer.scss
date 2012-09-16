@@ -1,12 +1,9 @@
 footer {
     color:#777;
+    font-size:0.75em;
+    padding-top:$baseline;
+    padding-bottom:$baseline;
     text-align:center;
-    padding-top:1.5em;
-    padding-bottom:1.5em;
-
-    a, p {
-        font-size:0.75em;
-    }
 
     a {
        color:#222;
