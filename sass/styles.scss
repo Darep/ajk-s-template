@@ -9,8 +9,8 @@
 // Style wide settings
 $color-text: #333;
 
-$font-body: 'Open Sans', sans-serif;
-$font-heading: 'Open Sans Condensed', sans-serif;
+$font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-heading: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
 
 $baseline: 24px;
 
@@ -54,9 +54,14 @@ $baseline: 24px;
 \*------------------------------------*/
 
 
-/* BASE & TYPOGRAPHY
+/* BASE
 ----------------------------------------------------------------------------- */
 @import "partials/_base";
+
+
+/* TYPOGRAPHY
+----------------------------------------------------------------------------- */
+@import "partials/_typography";
 
 
 /* ABSTRACTIONS (OOCSS style)
@@ -67,11 +72,6 @@ $baseline: 24px;
 /*------------------------------------*\
     OBJECTS
 \*------------------------------------*/
-
-
-/* LAYOUT / GRID
------------------------------------------------------------------------------ */
-@import "partials/_layout";
 
 
 /* ICONS & ANIMATIONS
