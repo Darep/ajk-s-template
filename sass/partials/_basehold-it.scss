@@ -1,0 +1,25 @@
+body {
+    position: relative;
+}
+
+body:after {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 9999;
+    content: '';
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('http://basehold.it/image.php?height=#{$baseline}&hex=444444') repeat top left;
+}
+
+body:active:after {
+    display: none;
+}
+
+/* hide baseline grid when body has "no-grid" class */
+.no-grid::after { display: none; }

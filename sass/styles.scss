@@ -11,11 +11,19 @@
 
 // Style wide settings
 $color-text: #333;
+$color-light: #888;
+$color-heading: #101010;
+$color-link: #17c;
+$color-link-hover: #a53;
+$link-border: 1px solid #ced2df;
 
 $font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
 $font-heading: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
 
 $baseline: 24px;
+
+// Baseline grid. Remove in production!
+@import "partials/_basehold-it";
 
 
 // Mixins
