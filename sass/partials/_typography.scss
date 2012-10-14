@@ -1,6 +1,6 @@
 
 body {
-    /* 16px/24px --> $baseline: 24px */
+    /* 16px/1.5*16px=24px --> $baseline: 24px */
     font:100%/1.5 $font-body;
 }
 body, input, textarea {
@@ -20,12 +20,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: $baseline 0;
 }
 ol, ul, p, pre, table, form {
-    margin:0 0 $baseline;
+    margin: 0 0 $baseline;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-    color:#101010;
+    color: $color-heading;
     font-family: $font-heading;
     font-weight: 700;
     line-height: $baseline;
@@ -35,8 +35,8 @@ h1, .fake-h1 {
     line-height: $baseline*2;
 }
 h2, .fake-h2 {
-    font-size: 1.5em;
-    line-height:$baseline*1.5;
+    font-size: 2em;
+    line-height: $baseline*2;
 }
 h3, .fake-h3 {
     font-size: 1.25em;
@@ -52,18 +52,18 @@ h6, .fake-h6 {
 }
 h5, h6 {
     letter-spacing: 0.0625em;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 
 a {
-    border-bottom:1px solid #ced2df;
-    color:#17c;
+    border-bottom: $link-border;
+    color: $color-link;
     text-decoration: none;
 }
 a:hover {
-    border-color:#a53;
-    color:#a53;
+    border-color: $color-link-hover;
+    color: $color-link-hover;
 }
 a:active, a:focus {
     opacity: .7;
@@ -71,8 +71,8 @@ a:active, a:focus {
 
 blockquote {
     border-left:2px solid #bbb;
-    color:#888;
-    margin: 0 0 1.6em;
+    color:$color-light;
+    margin: 0 0 $baseline;
     padding-left: 2em;
 }
 

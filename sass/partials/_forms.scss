@@ -13,27 +13,21 @@ legend {
 [type="text"], [type="password"], textarea {
     background: #fff;
     border: 1px solid #c9c9c9;
+    border-radius: 3px;
     font-size: 0.875em;
     margin:0 0 $baseline;
     outline: 0;
-    padding: 0.3125em 0.5em;
+    padding: ($baseline - 1)/4 0.5em; // minus because of the border
 
-    -webkit-transition: border 125ms ease;
-    -moz-transition: border 125ms ease;
-    -ms-transition: border 125ms ease;
-    -o-transition: border 125ms ease;
-    transition: border 125ms ease;
-
-    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff;
-    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff;
-    border-radius: 3px;
+    @include transition(border 125ms ease);
+    @include box-shadow(inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff);
 }
 [type="text"]:hover, [type="password"]:hover, textarea:hover {
     border-color:#b5b5b5;
 }
 [type="text"]:focus, [type="password"]:focus, textarea:focus {
     border-color: #17c;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff;
+    @include box-shadow(inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff);
 }
 
 label {

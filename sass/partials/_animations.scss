@@ -1,5 +1,7 @@
-/* 98.ANIMATIONS
------------------------------------------------------------------------------ */
+
+/* KEYFRAMES */
+@import "_keyframes";
+
 
 /* gradually sliding in list items */
 .slideIn > li, .slideIn > article {
@@ -37,8 +39,3 @@
     -o-animation-delay: .35s;
     animation-delay: .35s;
 }
-
-
-/* KEYFRAMES */
-
-@import "_keyframes";

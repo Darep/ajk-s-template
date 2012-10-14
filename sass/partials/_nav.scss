@@ -6,10 +6,10 @@
 }
 .main-nav a {
     border:0;
-    padding:5px 10px;
+    padding:$baseline/2 10px;
 }
 .main-nav .act a {
-    color:#222;
+    color: $color-text;
     font-weight:700;
 }
 
