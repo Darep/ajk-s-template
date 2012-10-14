@@ -3,11 +3,11 @@
 .media{
     display:block;
 }
-    .img{
+    .media .img{
         float:left;
         margin-right:1em;
     }
-        .img img{
+        .media .img img{
             display:block;
         }
     /* Reversed image location (right instead of left). */
@@ -15,10 +15,10 @@
         float:right;
         margin-left:1em;
     }
-    .body{
+    .media .body{
         overflow:hidden;
     }
-        .body > :last-child{
+        .media .body > :last-child{
             margin-bottom:0;
         }
 

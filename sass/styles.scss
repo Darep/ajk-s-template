@@ -5,6 +5,9 @@
 
 @import "compass/css3";
 
+// Frameless grid. Remove if don't need
+@import "partials/_frameless";
+
 
 // Style wide settings
 $color-text: #333;
