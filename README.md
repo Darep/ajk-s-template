@@ -1,4 +1,6 @@
-ajk-s-template
+ajk's template
 ==============
 
-Starting point for simple HTML/CSS/JS projects
+A starting point for CSS and JS. Uses Compass/Sass and modular magic! :)
+
+[Demo](http://darep.github.com/ajk-s-template/)
