@@ -6,84 +6,21 @@
 @import "compass/css3";
 
 // Frameless grid. Remove if don't need
-@import "partials/_frameless";
+@import "partials/frameless";
 
 
-// Style wide settings
-$color-text: #333;
-$color-light: #888;
-$color-heading: #101010;
-$color-link: #17c;
-$color-link-hover: #a53;
-$link-border: 1px solid #ced2df;
+@import "vars";
+@import "mixins";
 
-$font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
-$font-heading: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
-
-$baseline: 24px;
 
 // Baseline grid. Remove in production!
-@import "partials/_basehold-it";
+@import "partials/basehold-it";
 
-
-// Mixins
-@mixin image-replacement {
-    text-indent:100%;
-    overflow:hidden;
-    white-space:nowrap;
-}
-
-@mixin clearfix {
-    *zoom: 1;
-
-    &:before, &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-@mixin disable-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content
-  }
-  @-moz-keyframes #{$name} {
-    @content
-  }
-  @-ms-keyframes #{$name} {
-    @content
-  }
-  @-o-keyframes #{$name} {
-    @content
-  }
-  @keyframes #{$name} {
-    @content
-  }
-}
-
-@mixin animation($value) {
-  -webkit-animation: $value;
-  -moz-animation: $value;
-  -ms-animation: $value;
-  -o-animation: $value;
-  animation: $value;
-}
 
 
 /* RESET
 ----------------------------------------------------------------------------- */
-@import "partials/_reset";
+@import "partials/reset";
 
 
 /*------------------------------------*\
@@ -93,17 +30,17 @@ $baseline: 24px;
 
 /* BASE
 ----------------------------------------------------------------------------- */
-@import "partials/_base";
+@import "partials/base";
 
 
 /* TYPOGRAPHY
 ----------------------------------------------------------------------------- */
-@import "partials/_typography";
+@import "partials/typography";
 
 
 /* ABSTRACTIONS (OOCSS style)
 ----------------------------------------------------------------------------- */
-@import "partials/_abstractions";
+@import "partials/abstractions";
 
 
 /*------------------------------------*\
@@ -111,30 +48,35 @@ $baseline: 24px;
 \*------------------------------------*/
 
 
-/* ICONS & ANIMATIONS
+/* ICONS
 ----------------------------------------------------------------------------- */
-@import "partials/_icons";
-@import "partials/_animations";
+@import "partials/icons";
+
+
+/* ANIMATIONS
+----------------------------------------------------------------------------- */
+@import "partials/keyframes";
+@import "partials/animations";
 
 
 /* BUTTONS
 ----------------------------------------------------------------------------- */
-@import "partials/_buttons";
+@import "partials/buttons";
 
 
 /* FORMS
 ----------------------------------------------------------------------------- */
-@import "partials/_forms";
+@import "partials/forms";
 
 
 /* TABLES
 ----------------------------------------------------------------------------- */
-@import "partials/_tables";
+@import "partials/tables";
 
 
 /* NAV
 ----------------------------------------------------------------------------- */
-@import "partials/_nav";
+@import "partials/nav";
 
 
 /*------------------------------------*\
@@ -144,12 +86,12 @@ $baseline: 24px;
 
 /* HEADER
 ----------------------------------------------------------------------------- */
-@import "partials/_header";
+@import "partials/header";
 
 
 /* FOOTER
 ----------------------------------------------------------------------------- */
-@import "partials/_footer";
+@import "partials/footer";
 
 
 /*------------------------------------*\
@@ -159,4 +101,4 @@ $baseline: 24px;
 
 /* ALL THE REST
 ----------------------------------------------------------------------------- */
-@import "partials/_other";
+@import "partials/other";
