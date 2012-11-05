@@ -9,7 +9,7 @@ A starting point for CSS and JS. Uses Compass/Sass and modular magic! :)
 
 **MIT License**
 
-Copyright (c) 2012 Antti-Jussi Kovalainen
+Copyright (c) 2012 Antti-Jussi Kovalainen  
 http://ajk.fi/
 
 Permission is hereby granted, free of charge, to any person obtaining
