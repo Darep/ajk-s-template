@@ -1,6 +1,5 @@
 footer {
     color: $color-light;
-    font-size:0.75em;
     padding-top:$baseline;
     padding-bottom:$baseline;
     text-align:center;
@@ -10,6 +9,7 @@ footer {
     }
 
     p {
+        font-size:0.75em;
         margin:0;
     }
 }
