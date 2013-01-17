@@ -8,7 +8,7 @@
     background: #fafafa;
     // Use Compass's CSS3 extension
     @include background-image(linear-gradient(top, #fff, #e6e6e6));
-    border: 1px solid #bdbdbd;
+    border: 1em/(16*0.875) solid #bdbdbd;
     border-color: #cecece #bdbdbd #aeaeae;
     color: #707070;
     cursor: pointer;
@@ -21,11 +21,11 @@
     margin: 0 0 $baseline;
     padding: ($baseline - 1)/4 1.25em; // minus because of the border
     text-decoration:none;
-    text-shadow: 0 1px 0px #fff;
+    text-shadow: 0 1px 0 #fff;
 
     border-radius: 3px;
 
-    @include transition(border 125ms ease, box-shadow 125ms ease);
+    @include transition(border 125ms, box-shadow 125ms);
 
     &:hover, &:active, &.act {
         border-color:#a0a0a0;
