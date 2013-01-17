@@ -1,31 +1,31 @@
 // Mixins
-@mixin image-replacement {
-    text-indent:100%;
-    overflow:hidden;
-    white-space:nowrap;
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -ms-animation: $value;
+    -o-animation: $value;
+    animation: $value;
 }
 
-@mixin clearfix {
-    *zoom: 1;
-
-    &:before, &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
+@mixin animation-delay($value) {
+    -webkit-animation-delay: $value;
+    -moz-animation-delay: $value;
+    -ms-animation-delay: $value;
+    -o-animation-delay: $value;
+    animation-delay: $value;
 }
 
-@mixin disable-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+@mixin animation-fill-mode($value) {
+    -webkit-animation-fill-mode: $value;
+    -moz-animation-fill-mode: $value;
+    -ms-animation-fill-mode: $value;
+    -o-animation-fill-mode: $value;
+    animation-fill-mode: $value;
 }
 
+// NOTE! Only use this if @content contains non-vendor prefixed attributes!
+//       (or all the vendor prefixed attributes...)
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
     @content
@@ -44,10 +44,3 @@
   }
 }
 
-@mixin animation($value) {
-  -webkit-animation: $value;
-  -moz-animation: $value;
-  -ms-animation: $value;
-  -o-animation: $value;
-  animation: $value;
-}

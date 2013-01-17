@@ -24,13 +24,15 @@
 
 
 /* The nav abstraction (http://csswizardry.com/2011/09/the-nav-abstraction/) */
-.nav {
+.nav, [class|="nav"] {
     list-style:none;
     margin-left:0;
-}
-.nav li {
-    display:inline;
-}
-.nav a {
-    display:inline-block;
+
+    li {
+        display:inline;
+    }
+
+    a {
+        display:inline-block;
+    }
 }

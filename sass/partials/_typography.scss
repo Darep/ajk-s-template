@@ -17,7 +17,7 @@ textarea {
 
 /* margins */
 h1, h2, h3, h4, h5, h6 {
-    margin: $baseline 0;
+    margin: 0 0 $baseline;
 }
 ol, ul, p, pre, table, form {
     margin: 0 0 $baseline;
@@ -70,8 +70,8 @@ a:active, a:focus {
 }
 
 blockquote {
-    border-left:2px solid #bbb;
-    color:$color-light;
+    border-left: 2px solid #bbb;
+    color: $color-light;
     margin: 0 0 $baseline;
     padding-left: 2em;
 }
@@ -87,8 +87,13 @@ pre code {
     background:transparent;
     border:0;
     display:block;
+    font-weight: 400;
     padding:0;
 }
+pre {
+    overflow-x: auto;
+}
+
 
 small {
     font-size:0.85em;

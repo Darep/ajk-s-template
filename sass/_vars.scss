@@ -4,9 +4,16 @@ $color-light: #888;
 $color-heading: #101010;
 $color-link: #17c;
 $color-link-hover: #a53;
+
 $link-border: 1px solid #ced2df;
 
 $font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
 $font-heading: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
 
-$baseline: 24px;
+//$baseline: 1.5rem;  // rem is much better, but support is pretty bad...
+$baseline: 1.5*16px;
+
+// Breakpoints for responsive design
+$breakpoint-1: 530px;
+$breakpoint-2: 730px;
+$breakpoint-3: 1000px;

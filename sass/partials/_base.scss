@@ -11,15 +11,15 @@ html {
 /* Sam's Grid System: http://samsoff.es/posts/my-grid-system */
 /* Implemented using Frameless Grid */
 .wrapper, .row {
-    margin:0 auto;
+    @extend .clearfix;
+    margin: 0 auto;
     max-width: $cols10;
-    @include clearfix;
 }
 .row > div {
-    float:right;
+    float: right;
     width: $cols5;
 }
 .row > div:first-child {
-    float:left;
+    float: left;
 }
 

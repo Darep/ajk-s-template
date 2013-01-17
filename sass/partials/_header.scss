@@ -1,5 +1,4 @@
-
-header {
+.site-header {
+    @extend .clearfix;
     padding-top:$baseline;
-    @include clearfix;
 }

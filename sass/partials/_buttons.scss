@@ -7,21 +7,21 @@
 [type=submit], .btn {
     background: #fafafa;
     // Use Compass's CSS3 extension
-    @include background-image(linear-gradient(top, #ffffff, #e6e6e6));
-    border:1px solid #bdbdbd;
-    border-color:#cecece #bdbdbd #aeaeae;
-    color:#707070;
+    @include background-image(linear-gradient(top, #fff, #e6e6e6));
+    border: 1px solid #bdbdbd;
+    border-color: #cecece #bdbdbd #aeaeae;
+    color: #707070;
     cursor: pointer;
 
-    display:inline-block;
-    font-family:inherit;
-    font-size:0.875em;
-    line-height:$baseline;
-    font-weight:700;
-    margin:0 0 $baseline;
-    padding:($baseline - 1)/4 1.25em; // minus because of the border
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.875em;
+    line-height: $baseline;
+    font-weight: 700;
+    margin: 0 0 $baseline;
+    padding: ($baseline - 1)/4 1.25em; // minus because of the border
     text-decoration:none;
-    text-shadow:0px 1px 0px #fff;
+    text-shadow: 0 1px 0px #fff;
 
     border-radius: 3px;
 

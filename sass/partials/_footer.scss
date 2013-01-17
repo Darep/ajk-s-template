@@ -1,14 +1,14 @@
-footer {
+.site-footer {
     color: $color-light;
-    padding-bottom:$baseline;
-    text-align:center;
+    padding-bottom: $baseline;
+    text-align: center;
 
     a {
-       color:#222;
+       color: $color-text;
     }
 
     p {
-        font-size:0.75em;
-        margin:0;
+        font-size: 0.75em;
+        margin: 0;
     }
 }
