@@ -1,5 +1,5 @@
 .DS_Store
 ._*
 /tmp
-src/node_modules
+node_modules
 .sass-cache
