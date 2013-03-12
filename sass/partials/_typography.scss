@@ -1,18 +1,17 @@
 
 body {
-    /* 16px/1.5*16px=24px --> $baseline: 24px */
-    font:100%/1.5 $font-body;
+    font: 100%/1.5 $font-body;
 }
 body, input, textarea {
-    color:$color-text;
+    color: $color-text;
 }
 input, textarea {
-    font-family:sans-serif;
-    font-size:1em;
-    line-height:$baseline;
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: $baseline;
 }
 textarea {
-    line-height:$baseline;
+    line-height: $baseline;
 }
 
 /* margins */
@@ -26,13 +25,13 @@ ol, ul, p, pre, table, form {
 
 h1, h2, h3, h4, h5, h6 {
     color: $color-heading;
-    font-family: $font-heading;
+    @include font-heading;
     font-weight: 700;
     line-height: $baseline;
 }
 h1, .fake-h1 {
     font-size: 2.625em;
-    line-height: $baseline*2;
+    line-height: 2*$baseline;
 }
 h2, .fake-h2 {
     font-size: 2em;
@@ -71,7 +70,7 @@ a:active, a:focus {
 
 blockquote {
     border-left: 0.125em solid #bbb;
-    color: $color-light;
+    color:$color-gray;
     margin: 0 0 $baseline;
     padding-left: 2em;
 }

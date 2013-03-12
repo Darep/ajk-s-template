@@ -1,6 +1,6 @@
 // Style wide settings
 $color-text: #333;
-$color-light: #888;
+$color-gray: #888;
 $color-heading: #101010;
 $color-link: #17c;
 $color-link-hover: #a53;
@@ -8,12 +8,15 @@ $color-link-hover: #a53;
 $link-border: 1px solid #ced2df;
 
 $font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
-$font-heading: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
 
-//$baseline: 1.5rem;  // rem is much better, but support is pretty bad...
-$baseline: 1.5*16px;
+/* font-heading is a mixing, because headings have more than just a font-family */
+@mixin font-heading {
+    font-family: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-// Breakpoints for responsive design
-$breakpoint-1: 530px;
-$breakpoint-2: 730px;
-$breakpoint-3: 1000px;
+/* Modular scale */
+
+
+$baseline: em(24);

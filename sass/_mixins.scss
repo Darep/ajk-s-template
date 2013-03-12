@@ -1,5 +1,15 @@
 // Mixins
 
+@mixin disable-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Animations
 @mixin animation($value) {
     -webkit-animation: $value;
     -moz-animation: $value;
@@ -16,6 +26,14 @@
     animation-delay: $value;
 }
 
+@mixin animation-duration($value) {
+    -webkit-animation-duration: $value;
+    -moz-animation-duration: $value;
+    -ms-animation-duration: $value;
+    -o-animation-duration: $value;
+    animation-duration: $value;
+}
+
 @mixin animation-fill-mode($value) {
     -webkit-animation-fill-mode: $value;
     -moz-animation-fill-mode: $value;
@@ -27,20 +45,25 @@
 // NOTE! Only use this if @content contains non-vendor prefixed attributes!
 //       (or all the vendor prefixed attributes...)
 @mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content
-  }
-  @-moz-keyframes #{$name} {
-    @content
-  }
-  @-ms-keyframes #{$name} {
-    @content
-  }
-  @-o-keyframes #{$name} {
-    @content
-  }
-  @keyframes #{$name} {
-    @content
-  }
+    @-webkit-keyframes #{$name} {
+        @content
+    }
+    @-moz-keyframes #{$name} {
+        @content
+    }
+    @-ms-keyframes #{$name} {
+        @content
+    }
+    @-o-keyframes #{$name} {
+        @content
+    }
+    @keyframes #{$name} {
+        @content
+    }
 }
 
+
+// Converts pixels to EMs
+@function em($pixels, $context: 16) {
+    @return ($pixels/$context)+0em;
+}

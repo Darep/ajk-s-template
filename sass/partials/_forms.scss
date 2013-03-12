@@ -1,5 +1,5 @@
 legend {
-    font-family: $font-heading;
+    @include font-heading;
     margin:0 0 $baseline;
 }
 

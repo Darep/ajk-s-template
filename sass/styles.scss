@@ -1,20 +1,15 @@
+@charset "UTF-8";
 /*!
- * ajk's Hot New Template
- * Made by ajk (ajk.fi)
+ * A template by ajk (ajk.fi)
  */
 
 @import "compass/css3";
-
 // Frameless grid. Remove if don't need
 @import "partials/frameless";
 
-
-@import "vars";
 @import "mixins";
-
-
-// Baseline grid. Remove in production!
-@import "partials/basehold-it";
+@import "vars";
+@import "breakpoints";
 
 
 /* Reset */
@@ -38,8 +33,8 @@
 
 
 /* Components */
-@import "partials/header";
-@import "partials/footer";
+@import "partials/components/header";
+@import "partials/components/footer";
 
 
 /* Sections */
