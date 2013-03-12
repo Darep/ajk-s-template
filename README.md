@@ -1,11 +1,13 @@
 ajk's template
 ==============
 
-A starting point, a boilerplate, a template for your Web project. Mainly just provides a bunch of nice CSS/Sass things so you are ready to just roll. Main point is to promote smart modularity with CSS, so the project's CSS won't become a dump. Also tries to promote responsiveness and ems instead of pixels.
+A starting point. A boilerplate. A template for your Web project. Mainly just provides a bunch of nice CSS/Sass things so you are ready to just roll. Main point is to promote smart modularity with CSS, so the project's CSS won't become a dump. Also tries to promote responsiveness and ems instead of pixels.
 
 Check out the `sass`-directory and take a look around. If you like it, grab the template and start hacking! :)
 
 [See demo](http://darep.github.com/ajk-s-template/)
+
+Extra note: This template was built for internal CSS trainings I hold at Solita; to demonstrate the modular capabilities of CSS/Sass.
 
 ### License
 
