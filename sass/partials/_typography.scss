@@ -6,7 +6,7 @@ body, input, textarea {
     color: $color-text;
 }
 input, textarea {
-    font-family: sans-serif;
+    font-family: $font-body;
     font-size: 1em;
     line-height: $baseline;
 }
