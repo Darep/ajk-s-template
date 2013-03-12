@@ -4,28 +4,22 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     lint: {
-       files: ['grunt.js', '../js/scripts.js', '../js/site.*']
+       files: ['grunt.js', 'js/src/**/*.js']
     },
     concat: {
       dist: {
-        src: ['../js/scripts.js', '../js/slideshow.js', '../js/faderslider.js', '../js/site.*'],
-        dest: '../js/ajkim.min.js'
+        src: ['js/src/**/*.js'],
+        dest: 'js/app.js'
       }
     },
     min: {
       dist: {
         src: '<config:concat.dist.dest>',
-        dest: '<config:concat.dist.dest>'
-      }
-    },
-    cssmin: {
-      dist: {
-        src: '../css/main.css',
-        dest: '../css/main.css'
+        dest: 'js/app.min.js'
       }
     },
     watch: {
-      files: ['<config:lint.files>', '../sass/*.scss'],
+      files: ['<config:lint.files>'],
       tasks: 'default'
     },
     jshint: {
@@ -46,20 +40,9 @@ module.exports = function(grunt) {
       },
       globals: {}
     },
-    uglify: {},
-    compass: {
-      dist: {
-        forcecompile: true
-      }
-    }
+    uglify: {}
   });
 
   // Default task.
-  grunt.registerTask('default', 'concat min compass cssmin');
-
-  // Compass tasks
-  grunt.loadNpmTasks('grunt-compass');
-
-  // CSS tasks
-  grunt.loadNpmTasks('grunt-css');
+  grunt.registerTask('default', 'concat min');
 };
