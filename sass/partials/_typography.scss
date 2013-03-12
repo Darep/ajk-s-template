@@ -15,10 +15,7 @@ textarea {
 }
 
 /* margins */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 $baseline;
-}
-ol, ul, p, pre, table, form {
+ol, ul, p, pre, table, form, img {
     margin: 0 0 $baseline;
 }
 
@@ -27,27 +24,33 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-heading;
     @include font-heading;
     font-weight: 700;
-    line-height: $baseline;
 }
 h1, .fake-h1 {
     font-size: 2.625em;
-    line-height: 2*$baseline;
+    line-height: em(48, 2.625*16);
+    margin: 0 0 em(24, 2.625*16);
 }
 h2, .fake-h2 {
     font-size: 2em;
-    line-height: $baseline*2;
+    line-height: em(48, 2*16);
+    margin: 0 0 em(24, 2*16);
 }
 h3, .fake-h3 {
     font-size: 1.25em;
+    line-height: em(24, 1.25*16);
+    margin: 0 0 em(24, 1.25*16);
 }
 h4, .fake-h4 {
     font-size: 1em;
+    margin: 0 0 em(24);
 }
 h5, .fake-h5 {
     font-size: 1em;
+    margin: 0 0 em(24);
 }
 h6, .fake-h6 {
     font-size: 0.75em;
+    margin: 0 0 em(24, 0.75*16);
 }
 h5, h6 {
     letter-spacing: 0.0625em;

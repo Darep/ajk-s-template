@@ -13,7 +13,6 @@ $font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
 @mixin font-heading {
     font-family: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 /* Modular scale */
