@@ -1,7 +1,9 @@
 ajk's template
 ==============
 
-A starting point for CSS and JS. Uses Compass/Sass and modular magic! :)
+A starting point, a boilerplate, a template for your Web project. Mainly just provides a bunch of nice CSS/Sass things so you are ready to just roll. Main point is to promote smart modularity with CSS, so the project's CSS won't become a dump. Also tries to promote responsiveness and ems instead of pixels.
+
+Check out the `sass`-directory and take a look around. If you like it, grab the template and start hacking! :)
 
 [See demo](http://darep.github.com/ajk-s-template/)
 
@@ -9,7 +11,7 @@ A starting point for CSS and JS. Uses Compass/Sass and modular magic! :)
 
 **MIT License**
 
-Copyright (c) 2012 Antti-Jussi Kovalainen  
+Copyright (c) 2012-2013 Antti-Jussi Kovalainen
 http://ajk.fi/
 
 Permission is hereby granted, free of charge, to any person obtaining
