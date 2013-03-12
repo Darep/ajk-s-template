@@ -7,7 +7,7 @@ Check out the `sass`-directory and take a look around. If you like it, grab the 
 
 [See demo](http://darep.github.com/ajk-s-template/)
 
-Extra note: This template was built for internal CSS trainings I hold at Solita; to demonstrate the modular capabilities of CSS/Sass.
+Extra note: This template was built for CSS trainings I hold at Solita; to demonstrate the capabilities of CSS/Sass. Especially modular capabilities. Separation of Concerns, Single Responsibility, etc.
 
 ### License
 
