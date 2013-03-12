@@ -1,37 +1,22 @@
 /* humanstxt.org */
 
 /* TEAM */
+Your title: Your name.
+Site: email, link to a contact form, etc.
+Twitter: your Twitter username.
+Location: City, Country.
 
-Antti-Jussi Kovalainen
-Layout, markup, CSS and Javascript
-http://www.ajk.im/
-
-
+                        [...]
 
 
 /* THANKS */
+Name: name or url
 
-Me (http://ajk.im/) for being awesome.
-
-
+                        [...]
 
 
 /* SITE */
-
-TECHNOLOGY STACK
-
-960 Grid System   http://960.gs/
-LESS              http://lesscss.org/
-Modernizr         http://modernizr.com/
-jQuery            http://jquery.com/
-
-
-FONTS
-
-Open Sans         http://www.google.com/webfonts/specimen/Open+Sans
-
-
-ICONS
-
-
-ETC.
+Last update: YYYY/MM/DD
+Standards: HTML5, CSS3,..
+Components: Modernizr, jQuery, etc.
+Software: Software used for the development
