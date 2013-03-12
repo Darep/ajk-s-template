@@ -1,5 +1,5 @@
 
-/* breaks long words. sometimes in funny places :) */
+/* breaks long words. note: breaks may be in funny places :) */
 .break-words {
     -ms-word-break: break-all;
     word-break: break-all;
@@ -11,15 +11,3 @@
 
 /* Pretty &amp; s */
 .amp { font-family: 'Goudy Old Style', Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', serif; font-style:italic; }
-
-/* micro clearfix */
-.cf:before, .cf:after {
-    content:"";
-    display:table;
-}
-.cf:after {
-    clear:both;
-}
-.cf {
-    *zoom:1;
-}

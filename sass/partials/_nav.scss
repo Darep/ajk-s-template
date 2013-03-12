@@ -1,7 +1,9 @@
+.nav, [class|="nav"] {
+    padding-left: 0;
+}
 
 .nav-main {
     background: #eee;
-    padding-left: 0;
     width: 100%;
 
     li:first-child {
@@ -19,6 +21,7 @@
     }
 }
 
-.breadcrumb li + li:before {
-    content: "\00bb ";
+.nav-breadcrumb li + li:before {
+    content: "\00bb";
+    margin-right: .3em;
 }

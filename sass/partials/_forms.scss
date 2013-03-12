@@ -3,6 +3,13 @@ legend {
     margin:0 0 $baseline;
 }
 
+label {
+    font-weight: 600;
+}
+label + label {
+    margin-left: em(15);
+}
+
 
 // Text fields
 //
@@ -12,26 +19,24 @@ legend {
 // Styleguide 2.1
 [type="text"], [type="password"], textarea {
     background: #fff;
-    border: 1px solid #c9c9c9;
+    border: em(1, 14) solid #c9c9c9;
     border-radius: 3px;
-    font-size: 0.875em;
+    font-size: em(14);
     margin:0 0 $baseline;
     outline: 0;
-    padding: ($baseline - 1)/4 0.5em; // minus because of the border
+    padding: em(6) em(6); // minus because of the border
 
     @include transition(border 125ms ease);
     @include box-shadow(inset 0 2px 3px rgba(0, 0, 0, .08), 0 1px 0 #fff);
-}
-[type="text"]:hover, [type="password"]:hover, textarea:hover {
-    border-color:#b5b5b5;
-}
-[type="text"]:focus, [type="password"]:focus, textarea:focus {
-    border-color: #17c;
-    @include box-shadow(inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff);
-}
 
-label {
-    font-weight:600;
+    &:hover {
+        border-color:#b5b5b5;
+    }
+
+    &:focus {
+        border-color: #17c;
+        @include box-shadow(inset 0 2px 4px rgba(0, 0, 0, .2), 0 1px 0 #fff);
+    }
 }
 
 
@@ -48,7 +53,4 @@ select {
 // Styleguide 2.3
 [type="checkbox"] {
     margin:0 0 $baseline;
-}
-label + label {
-    margin-left:15px;
 }

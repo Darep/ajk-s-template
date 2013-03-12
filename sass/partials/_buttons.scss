@@ -4,34 +4,35 @@
 // :active, .act  - You are press all the right buttons
 //
 // Styleguide 3.1
-[type=submit], .btn {
+.btn, button, input[type="submit"] {
     background: #fafafa;
     // Use Compass's CSS3 extension
     @include background-image(linear-gradient(top, #fff, #e6e6e6));
-    border: 1em/(16*0.875) solid #bdbdbd;
+    border: em(1, 14) solid #bdbdbd;
     border-color: #cecece #bdbdbd #aeaeae;
+    border-radius: em(3, 0.875*16);
     color: #707070;
     cursor: pointer;
-
     display: inline-block;
     font-family: inherit;
-    font-size: 0.875em;
-    line-height: $baseline;
+    font-size: em(14);
+    line-height: em(24, 14);
     font-weight: 700;
     margin: 0 0 $baseline;
-    padding: ($baseline - 1)/4 1.25em; // minus because of the border
+    padding: em(6, 14) em(14, 14); // minus because of the border
     text-decoration:none;
-    text-shadow: 0 1px 0 #fff;
+    text-shadow: 0 em(1, 14) 0 #fff;
+    -webkit-appearance: none;
 
-    border-radius: 3px;
 
-    @include transition(border 125ms, box-shadow 125ms);
+    @include transition(125ms);
 
     &:hover, &:active, &.act {
         border-color:#a0a0a0;
         color:#444;
         @include box-shadow(0 1px 2px rgba(0,0,0, 0.2));
     }
+
     &:active, &.act {
         background: #ddd;
         // Example of what Compass's CSS3 background-image extension will output
