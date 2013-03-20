@@ -9,7 +9,7 @@ $link-border: 1px solid #ced2df;
 
 $font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
 
-/* font-heading is a mixing, because headings have more than just a font-family */
+/* font-heading is a mixin, because headings have more than just a font-family */
 @mixin font-heading {
     font-family: 'Open Sans Condensed', 'Arial Narrow', sans-serif;
     font-weight: 700;
