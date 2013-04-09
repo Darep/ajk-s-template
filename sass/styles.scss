@@ -4,42 +4,43 @@
  */
 
 @import "compass/css3";
+
 // Frameless grid. Remove if don't need
-@import "partials/frameless";
+@import "generic/frameless";
 
 @import "mixins";
 @import "vars";
-@import "breakpoints";
 
 
 /* Reset */
-@import "partials/reset";
+@import "generic/reset";
 
 
 /* Base */
-@import "partials/common";
-@import "partials/base";
-@import "partials/typography";
-@import "partials/abstractions";
-@import "partials/animations";
+@import "generic/breakpoints";
+@import "generic/common";
+@import "generic/base";
+@import "generic/typography";
+@import "generic/abstractions";
+@import "generic/animations";
 
 
 /* Objects */
-@import "partials/icons";
-@import "partials/buttons";
-@import "partials/forms";
-@import "partials/tables";
-@import "partials/nav";
+@import "components/icons";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/nav";
 
 
 /* Components */
-@import "partials/components/header";
-@import "partials/components/footer";
+@import "components/header";
+@import "components/footer";
 
 
 /* Sections */
-@import "partials/home";
+@import "pages/home";
 
 
 /* Other */
-@import "partials/other";
+@import "components/other";
