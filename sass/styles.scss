@@ -1,46 +1,35 @@
 @charset "UTF-8";
-/*!
- * A template by ajk (ajk.fi)
- */
 
 @import "compass/css3";
 
-// Frameless grid. Remove if don't need
-@import "generic/frameless";
+@import "base/frameless";  // Frameless grid. Remove if no need
 
-@import "mixins";
-@import "vars";
+// Globals
+@import "globals/mixins";
+@import "globals/vars";
+@import "globals/breakpoints";
 
+// Base
+@import "base/reset";
+@import "base/common";
+@import "base/base";
+@import "base/typography";
+@import "base/abstractions";
+@import "base/animations";
 
-/* Reset */
-@import "generic/reset";
-
-
-/* Base */
-@import "generic/breakpoints";
-@import "generic/common";
-@import "generic/base";
-@import "generic/typography";
-@import "generic/abstractions";
-@import "generic/animations";
-
-
-/* Objects */
+// Objects
 @import "components/icons";
 @import "components/buttons";
 @import "components/forms";
 @import "components/tables";
 @import "components/nav";
 
-
-/* Components */
+// Components
 @import "components/site-header";
 @import "components/site-footer";
 
-
-/* Sections */
+// Sections / Pages
 @import "pages/home";
 
-
-/* Other */
+// Other
 @import "components/other";
